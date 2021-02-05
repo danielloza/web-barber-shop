@@ -1,4 +1,4 @@
-# barbershop-website
+<!--# barbershop-website
 This website was made as a example for a barbershop. 
 
 
@@ -39,3 +39,4 @@ This website was made as a example for a barbershop.
 <p id="gdcalert4" >(<a href="#">Back to top</a>)   (<a href="#gdcalert5">Next Screen</a>)<br><span style="color: red; font-weight: bold"</span></p>
 <img width="600" src="https://user-images.githubusercontent.com/4177453/71794708-c622c980-3010-11ea-8f45-c5476982ccf2.PNG">
 
+-->
