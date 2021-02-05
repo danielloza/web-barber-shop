@@ -39,6 +39,13 @@ body {
   border:0;
 }
 
+.btn.btn-default-clear {
+  background-color:rgb(211,135,22);
+  color:white;
+  border:0;
+}
+
+
 #promo .jumbotron {
   background-color:rgba(255,255,255,0.75);
   border-radius:20px;
