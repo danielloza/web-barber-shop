@@ -1,4 +1,4 @@
-<!--# barbershop-website
+<!--# barbershop-website holis crayolis
 This website was made as a example for a barbershop. 
 
 
