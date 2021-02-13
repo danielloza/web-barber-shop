@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/Team-with-rotating-cards.css">
     <link rel="stylesheet" href="assets/css/Team.css">
     <link rel="stylesheet" href="assets/css/Team1.css">
+
 </head>
 
 <body>
@@ -45,7 +46,7 @@
         <div class="jumbotron">
             <h1>Bienvenidos</h1>
             <p>Lo Mejor de Corte Clásico y a Tijera.</p>
-            <!--<p><a class="btn btn-default" role="button" href="appointments.html">Book it now!</a></p>-->
+            <p><a class="btn btn-default" role="button" href="#divform">¡Haz tu cita ahora!</a></p>
         </div>
     </div>
     <div class="container">
@@ -68,7 +69,7 @@
                 <div class="col-lg-5 col-md-5 col-sm-6" style="height:265px;"><img src="assets/img/prices.jpg" style="height:285px;"></div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="divform">
             <div class="row">
                 <div class="col-md-3">
                     <h1>Precios </h1>
@@ -155,6 +156,37 @@
                             </div>
                             <div class="col-md-10 col-md-offset-1"><input class="form-control" type="text" name="email" required="" placeholder="Email" inputmode="email" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
                         </div>
+
+                        <div class="row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                            <div class="col-md-8 col-md-offset-1">
+                                <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Selecciona donde será tu servicio</strong></p>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1">
+                                <form action="../../form-result.php" method="post" target="_blank">
+                                <p>
+                                     <h5><input type="radio" name="appointments" style="margin-left:0px;font-family:Roboto, sans-serif;" onclick="toggle(this)" value="b"> Barberia<br></h5>
+                                     <h5><input type="radio" name="appointments" style="margin-left:0px;font-family:Roboto, sans-serif;" onclick="toggle(this)" value="d"> Domicilio<br> </h5> 
+                                </p>
+                                </form>
+                            </div>
+                            <div class="auto" id="data" style="display: none">
+                                <div class="col-md-8 col-md-offset-1">
+                                    <p style="margin-left:0px;font-family:Roboto, sans-serif;color:#FF0000"><strong>* Nota: Se aplicara un costo extra</strong></p>
+                                <div class="col-md-8 col-md-offset-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Calle y Número</strong></p>
+                                </div>
+                                <div class="col-md-10 col-md-offset-1"><input class="form-control" type="text" name="name" required="" placeholder="Calle y Número" style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                                <div class="col-md-8 col-md-offset-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>C.P.</strong></p>
+                                </div>
+                                <div class="col-md-10 col-md-offset-1"><input class="form-control" type="text" name="name" required="" placeholder="C.P." style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                                <div class="col-md-8 col-md-offset-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Descripción Domicilio</strong></p>
+                                </div>
+                                <div class="col-md-10 col-md-offset-1"><input class="form-control" type="text" name="name" required="" placeholder="Descripción..." style="margin-left:0px;font-family:Roboto, sans-serif;"></div>
+                            </div>
+                        </div>
+
                         <div class="row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                             <div class="col-md-8 col-md-offset-1">
                                 <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Notas </strong></p>
@@ -193,6 +225,24 @@
     <script src="assets/js/Contact-FormModal-Contact-Form-with-Google-Map.js"></script>
     <script src="assets/js/ebs-bootstrap-datepicker-11.js"></script>
     <script src="assets/js/ebs-bootstrap-datepicker.js"></script>
+    <script src="assets/js/funciones.js"></script>
+
+   
+    <!--<script type="text/javascript">
+         // A $( document ).ready() block.
+    $( document ).ready(function() {
+         toggle(elemento);
+    });
+
+        function toggle(elemento) {
+            if(elemento.value=="b") {
+                document.getElementById("data").style.display = "none";
+            }else{
+                if(elemento.value=="d"){
+                    document.getElementById("data").style.display = "block";
+                }
+            }
+    </script>-->
 </body>
 
 </html>
