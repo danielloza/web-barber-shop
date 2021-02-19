@@ -45,6 +45,11 @@ body {
   border:0;
 }
 
+.btn.btn-default-update {
+  background-color:rgb(63, 173, 66);
+  color:white;
+  border:0;
+}
 
 #promo .jumbotron {
   background-color:rgba(255,255,255,0.75);
